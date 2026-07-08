@@ -1,0 +1,37 @@
+Week 7 Tutorial 7 Documentation
+
+Program Name:
+Food Order Total Calculator
+
+Description:
+This program calculates the total payment for a food order.
+The user enters the food price and quantity.
+The program multiplies price by quantity and displays the total payment.
+
+Files Created:
+1. main.py
+2. food_order.py
+3. test_food_order.py
+4. W7_documentation.txt
+
+Bugs Found:
+1. The program may crash if the user enters text instead of numbers.
+2. The price should not be zero or negative.
+3. The quantity should not be zero or negative.
+
+Fixes:
+1. Used try and except to handle invalid input.
+2. Added validation for invalid price.
+3. Added validation for invalid quantity.
+4. Created pytest tests to check the program.
+
+Test Cases:
+calculate_total(10, 2) returns 20
+calculate_total(10, 3) returns 30
+calculate_total(20, 5) returns 100
+calculate_total(10, 1) returns 10
+calculate_total(-10, 2) returns invalid price
+calculate_total(10, 0) returns invalid quantity
+
+Conclusion:
+The program works correctly and passes all pytest test cases.
